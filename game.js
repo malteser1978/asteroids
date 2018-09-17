@@ -421,7 +421,7 @@ Ship = function () {
     }
     if (KEY_STATUS.space) {
       if (this.delayBeforeBullet <= 0) {this.delayBeforeBullet =10;
-        for (var i = 0; i < this.bullets.length; i++) {
+        for (var i = 0; i < this.bullets.length; i++) {this.delayBeforeBullet = 10;
           if (!this.bullets[i].visible) {
             SFX.laser();
             var bullet = this.bullets[i];
